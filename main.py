@@ -51,7 +51,7 @@ lock = threading.Lock()  # 用于线程锁
 
 project_info = "## ChatGPT 网页版    \n" \
                " Code From  " \
-               "[ChatGPT-Web](https://github.com/LiangYang666/ChatGPT-Web)  \n" \
+               "[ChatGPT-Web](https://zxh.one)  \n" \
                "发送`帮助`可获取帮助  \n"
 
 
@@ -465,7 +465,7 @@ def auth(request_head, session):
 
     user_info = get_user_info(user_id)
     if len(PASSWORD) > 0 and password != PASSWORD:
-        return False, "访问密码错误，请在设置中填写正确的访问密码"
+        return False, "为了防止滥用，已开启用户注册和访问密码。\n前往公众号：[张锡寒AI Generated Content](https://mp.weixin.qq.com/s/NOHUQuUVTecprqAjXozjfw) 回复【密码】免费获取密码。\n并在对话框发送 new:你要注册的用户名，\n注册成功后，点击右上角设置输入用户名和密码后解锁免费使用。\n\n卡顿或者没有反应？可能是用户量太大大👉[点这里获得独立账号KEY使用](https://shoping.dzbz555.top/buy/1)\n\n防止域名失效，建议保存👉[我的主页](https://www.zxh.one/)，而不是本功能页\n\n👉[点我进入备用站点](https://aigc.chatdoc.link/),"
 
     if user_info is not None:
         session['user_id'] = user_id

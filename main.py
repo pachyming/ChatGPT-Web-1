@@ -465,15 +465,15 @@ def auth(request_head, session):
 
     user_info = get_user_info(user_id)
     if len(PASSWORD) > 0 and password != PASSWORD:
-        return False, "为了防止滥用，已开启用户注册和访问密码。
-        前往公众号：[张锡寒AI Generated Content](https://mp.weixin.qq.com/s/NOHUQuUVTecprqAjXozjfw) 回复【密码】免费获取密码。
-        并在对话框发送 new:你要注册的用户名，
-        注册成功后，点击右上角设置输入用户名和密码后解锁免费使用。
-        
-        卡顿或者没有反应？可能是用户量太大大👉[点这里获得独立账号KEY使用](https://shoping.dzbz555.top/buy/1)
-        
-        防止域名失效，建议保存👉[我的主页](https://www.zxh.one/)，而不是本功能页
-                           
+        return False, "为了防止滥用，已开启用户注册和访问密码。\
+        前往公众号：[张锡寒AI Generated Content](https://mp.weixin.qq.com/s/NOHUQuUVTecprqAjXozjfw) 回复【密码】免费获取密码。\
+        并在对话框发送 new:你要注册的用户名，\
+        注册成功后，点击右上角设置输入用户名和密码后解锁免费使用。\
+        \
+        卡顿或者没有反应？可能是用户量太大大👉[点这里获得独立账号KEY使用](https://shoping.dzbz555.top/buy/1)\
+        \
+        防止域名失效，建议保存👉[我的主页](https://www.zxh.one/)，而不是本功能页\
+        \
         👉[点我进入备用站点](https://aigc.chatdoc.link/),"
 
     if user_info is not None:
